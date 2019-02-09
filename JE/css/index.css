@@ -1,0 +1,99 @@
+header{
+	border-bottom:2px solid black;
+	background-color:white;
+}
+
+body{
+	background:#CDC9A5;	
+}
+
+ .logo{
+	 text-align:right;
+ }
+ 
+.titulo h3{
+	text-align:center;
+	padding-top:80px;
+}
+
+.titulo p{
+	text-align:center;
+	color:grey;
+	font-size:22px;
+}
+
+.parede{
+	margin-top:60px;
+	margin-left:15%;
+	width:70%;
+	margin-right:15%;
+}
+
+.parede_botao{
+	background-color:snow;
+	margin-left:15%;
+	width:70%;
+	text-align:center;
+	border:1px solid black;
+	margin-right:15%;
+	margin-bottom:100px;
+}
+
+.parede_botao .botao a {
+	padding:20px;
+	color:black;
+	text-align:center;
+}
+
+.botao{
+	padding:20px;
+}
+
+.parede img{
+	width:100%;
+	height:500px;
+	border-radius:20px;
+}
+
+.rodape{
+	padding-top:20px;
+	text-align:center;
+}
+
+@media only screen and (max-width: 768px) {
+ .logo{
+	 margin-top:-20px;
+	 padding-bottom:0px;
+	 text-align:center;
+ }
+ 
+ .parede{
+	 width:100%;
+	 margin-top:0px;
+	 margin-left:0px;
+	 margin-right:0px;
+	 margin-bottom:0px;
+ }
+ 
+ .parede img{
+	 height:350px;
+	 width:100%;
+ }
+ 
+ .parede_botao{
+	 padding:20px;
+	 width:100%;
+	 margin-left:0px;
+	 margin-right:0px;
+	 margin-top:0px;
+ }
+ 
+ .dropdown-item{
+	 text-align:center;
+ }
+ 
+ 
+ .titulo h3{
+	 padding-top:20px;
+ }
+}

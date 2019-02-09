@@ -1,0 +1,19 @@
+section .container .col-md{
+	background-color:white;
+	padding-bottom:40px;
+}
+
+section .container .col-md h3{
+	padding:10px;
+	text-shadow:2px 2px grey;
+}
+
+section .container .col-md p{
+	padding:20px;
+	margin-right:10%;
+}
+
+section .container .col-md ul{
+	margin-left:5%;
+}
+

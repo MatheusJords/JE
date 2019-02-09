@@ -1,0 +1,22 @@
+section .col-md ul{
+	margin-left:15%;
+}
+
+section .container{
+	margin-left:15%;
+	margin-right:15%;
+	width:70%;
+}
+
+section .container h3{
+	margin-top:30px;
+	font-weight:normal;
+}
+
+section .row{
+	margin-bottom:40px;
+}
+
+section .row p{
+	margin-left:15%;
+}

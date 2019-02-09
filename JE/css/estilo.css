@@ -1,0 +1,59 @@
+header .container-fluid{
+	display:block;
+	height:auto;
+	position:absolute;
+	background-color:rgba(0,0,0,0.6);
+}
+
+.nav-item{
+	color:blue;
+}
+
+.container-fluid {
+	height:500px;
+}
+
+.container{
+	margin-bottom:60px;
+}
+
+.container .servico{
+	height:250px;
+	padding:10px;
+}
+
+.container #sobre{
+	margin-bottom:22px;
+}
+
+.container .sobre{
+	margin-left:30%;
+	margin-right:30%;
+	width:40%;
+	padding:10px;
+	height:250px;
+	margin-bottom:40px;
+}
+
+.rodape{
+	height:80px;
+	background-color:black;
+	border:1px solid black;
+}
+
+.rodape p{
+	color:white;
+	text-align:center;
+}
+
+.rodape p span{
+	color:blue;
+}
+
+@media only screen and (max-width: 768px) {
+    .container .sobre {
+		width:100%;
+		margin-left:0%;
+		margin-right:0%;
+	}
+}
