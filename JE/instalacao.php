@@ -37,32 +37,37 @@
 						<div class="modal-dialog modal-dialog-centered" role="document">
 							<div class="modal-content">
 								<div class="modal-header">
-									<h5 class="modal-title" id="exampleModalCenterTitle">Projeto 1</h5>
+									<h5 class="modal-title" id="exampleModalCenterTitle">Campo Grande RJ - Pergolado com pintura branca PU</h5>
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 										<span aria-hidden="true">&times;</span>
 									</button>
 								</div>
 								<div class="modal-body">
-								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-									<ol class="carousel-indicators">
-										<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-										<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-										<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-										<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-									</ol>
-									<div class="carousel-inner">
-										<div class="carousel-item active">
-											<img src="img/servico1.jpg" style="height:500px;width:100%;">
-										</div>
-										<div class="carousel-item">
-											<img src="img/servico1.jpg" style="height:500px;width:100%;">
-										</div>
-										<div class="carousel-item">
-											<img src="img/servico1.jpg" style="height:500px;width:100%;">
-										</div>
-										<div class="carousel-item">
-											<img src="img/servico1.jpg" style="height:500px;width:100%;">
-										</div>
+									<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+										<ol class="carousel-indicators">
+										<?php
+											// Contador ainda não inicializou
+											$contador = 0;
+											for ($contador=0; $contador < 14 ; $contador++) { ?>
+												<li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $contador; ?>"></li><?php
+											} 
+										?>
+										</ol>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="img/campo_grande/img1.jpeg" style="height:500px;width:100%;">
+											</div>
+										<?php
+											// Contador ainda não inicializou
+											$contador = 2;
+											for ($contador=2; $contador < 15 ; $contador++) { 
+												?>
+												<div class="carousel-item">
+													<img src="img/campo_grande/img<?php echo $contador; ?>.jpeg" style="height:500px;width:100%;">
+												</div>
+												<?php 
+											} 
+										?>
 									</div>
 									<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -81,20 +86,148 @@
 							</div>	
 						</div>
 					</div>
-					<img src="img/servico1.jpg" style="height:200px;width:200px;margin-bottom:10px;"/>
+					<h6>Campo Grande RJ - Pergolado</h6>
+					<img src="img/campo_grande/img12.jpeg" style="height:200px;width:200px;margin-bottom:10px;"/>
 					<br>
 					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-						Album
+						Ver fotos
 					</button>
 				</div>
+
+
+
 				<div class="col-md">
-					<img src="img/servico2.jpg" style="height:200px;width:200px;margin-bottom:30px;"/>
+				<!-- Modal -->
+				<div class="modal fade" id="botafogo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalCenterTitle">Escola Britânica - Botafogo</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div id="modal2" class="carousel slide" data-ride="carousel">
+										<ol class="carousel-indicators">
+										<?php
+											// Contador ainda não inicializou
+											$contador = 0;
+											for ($contador=0; $contador < 12 ; $contador++) { ?>
+												<li data-target="#modal2" data-slide-to="<?php echo $contador; ?>"></li><?php
+											} 
+										?>
+										</ol>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="img/botafogo/img1.jpeg" style="height:500px;width:100%;">
+											</div>
+										<?php
+											// Contador ainda não inicializou
+											$contador = 2;
+											for ($contador=2; $contador < 12 ; $contador++) { 
+												?>
+												<div class="carousel-item">
+													<img src="img/botafogo/img<?php echo $contador; ?>.jpeg" style="height:500px;width:100%;">
+												</div>
+												<?php 
+											} 
+										?>
+									</div>
+									<a class="carousel-control-prev" href="#modal2" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#modal2" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+									
+								</div>
+								<div class="modal-footer">
+								
+								</div>
+							</div>	
+						</div>
+					</div>
+					<h6>Escola Britânica - Botafogo</h6>
+					<img src="img/botafogo/img2.jpeg" style="height:200px;width:200px;margin-bottom:10px;"/>
+					<br>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#botafogo">
+						Ver fotos
+					</button>
 				</div>
+
+				<div class="col-md">
+				<!-- Modal -->
+				<div class="modal fade" id="fiocruz" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalCenterTitle">Fundação Oswaldo Cruz - Piso Gradeado</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div id="modal3" class="carousel slide" data-ride="carousel">
+										<ol class="carousel-indicators">
+										<?php
+											// Contador ainda não inicializou
+											$contador = 0;
+											for ($contador=0; $contador < 12 ; $contador++) { ?>
+												<li data-target="#modal3" data-slide-to="<?php echo $contador; ?>"></li><?php
+											} 
+										?>
+										</ol>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="img/fiocruz/img1.jpeg" style="height:500px;width:100%;">
+											</div>
+										<?php
+											// Contador ainda não inicializou
+											$contador = 2;
+											for ($contador=2; $contador < 12 ; $contador++) { 
+												?>
+												<div class="carousel-item">
+													<img src="img/fiocruz/img<?php echo $contador; ?>.jpeg" style="height:500px;width:100%;">
+												</div>
+												<?php 
+											} 
+										?>
+									</div>
+									<a class="carousel-control-prev" href="#modal3" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#modal3" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+									
+								</div>
+								<div class="modal-footer">
+								
+								</div>
+							</div>	
+						</div>
+					</div>
+					<h6>Fundação Oswaldo Cruz - Piso Gradeado</h6>
+					<img src="img/fiocruz/img12.jpeg" style="height:200px;width:200px;margin-bottom:10px;"/>
+					<br>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fiocruz">
+						Ver fotos
+					</button>
+				</div>
+				<!--
 				<div class="col-md">
 					<img src="img/servico3.jpg" style="height:200px;width:200px;margin-bottom:30px;"/>
 				</div>
+				-->
 			</div>
-			
+			<!--
 			<div class="row">
 				<div class="col-md">
 					<img src="img/servico7.jpg" style="height:200px;width:200px;"/>
@@ -106,6 +239,7 @@
 					<img src="img/servico6.jpg" style="height:200px;width:200px;"/>
 				</div>
 			</div>
+			-->
 		</div>
 	</section>
 	<?php require("footer.php"); ?>
